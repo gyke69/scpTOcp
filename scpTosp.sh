@@ -44,10 +44,10 @@ filename=1
 port=22 #
 
 #5 your server username, by default it is 'root'
-suser=1.x.x.x
+serveruser=root
 
 #6 your server ip
-sip= # your server iP
+serverip= # 1.x.x.x
 
 # script
 cd /home/$user/Downloads/
@@ -55,7 +55,7 @@ for file in *.$extenion ; do
 # //rename the file and its extenion.
     mv $file $( sed 's/\(.*\)_/\1\./' <<< $filename.$extenion)
 
-scp -P $port *.$extenion $suser@$sip:/root/certificates/certificate001/
+scp -P $port *.$extenion $serveruser@$serverip:/root/
 
 rm -rf *.$extenion
 done
