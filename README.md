@@ -27,7 +27,7 @@ execute the command down bellow with your server credential, and enter your pass
 ssh-copy-id root@remote_host
 ```
 `output:/ Number of key(s) added: 1
-Now try logging into the machine, with:   ssh root@144.91.89.208
+Now try logging into the machine, with:   ssh root@remote_host
 and check to make sure that only the key(s) you wanted were added.`
 
 ## (finally) Clone the Repository
