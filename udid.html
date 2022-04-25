@@ -1,0 +1,211 @@
+<html lang="en">
+    <head>
+    </head>
+    <body class="dark">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="images/favicon.png/96.png" sizes="96x96">
+    
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="ZTZju1nZGIvIjsdc8nSPkyec5AvsNs0ffFzhoe1s">
+    
+    <!-- Apple -->
+    <meta name="apple-mobile-web-app-title" content="Twickd">
+    <!-- Analytics -->
+    
+    
+
+    <!-- Meta -->
+            <meta property="og:url" content="https://twickd.com">
+    <title>UDID — UUID</title>
+
+    <!-- Scripts -->
+    
+
+    <!-- Analytics -->
+    <!-- Styles -->
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+    <link href="../css/twickd.css" rel="stylesheet">
+
+
+    <div id="app" class="background-color-gradient">
+                                                        <nav class="transparency-half">
+    
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-4 col-sm-3">
+                                                                <a href="index.html" class="nav-brand">
+                                        <img src="../images/creative.svg" class="svg-42">
+                                    </a>
+            </div>
+    
+            <div class="navigation col-2 col-sm-6 text-center">
+                                                    
+                    
+                    
+                                            </div>
+    
+            <div class="navigation-right col-6 col-sm-3 text-right">
+                <div class="btn-group">
+                    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="" class="dropdown-toggle color-white  d-flex align-items-center">
+                        <ion-icon name="ios-contact" size="large"></ion-icon>
+                        <div class="d-flex flex-column justify-content-center text-left  mx-2" style="line-height: 1;">
+                                                            <span class="p-0 m-0">Obtaining</span>
+                                <h6 class="font-weight-bold p-0 m-0 text-uppercase">• UDID</h6>
+                                                    </div>
+                        <ion-icon name="ios-arrow-down"></ion-icon>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right background-color-weak" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item btn-link btn-primary" href="login.html">Login</a>
+                                                            <a class="dropdown-item btn-link btn-primary" href="register.html">Tap to get UDID</a>
+                                                                        </div>
+                </div>
+    
+                    
+            </div>
+        </div>
+    </div>
+
+</nav>                                    
+
+        <main class=" py-4  container-fluid">
+            <section class="container">
+    <div class="row px-sm-3 justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 py-60 px-4 background-color-weak radius">
+            <div class="col-12 mb-3">
+                   <div class="col-0 mb-3">
+                <h1 class="color-strong">GET UDiD</h1>
+            </div>
+            <hr>
+            </div>
+
+        <form class="form-horizontal" method="POST" enctype="multipart/form-data">
+	<div class="form-group">
+      <label class="control-label col-sm-1 text-secondary">UDID</label>
+      <div class="col-sm-12">
+ 
+        <div class="input-group mb-3">
+ <input type="text" id="text" required="required" class="form-control" value="" style="font-size:0.65em" name="UDID" >
+  <div class="input-group-append">
+     <button type="button" class="btn btn-danger" id="myWish" href="javascript:;" class="btn btn-mini" onClick="copyTextToClipBoard()"><b>Copy</b></button>
+     </div>
+     </div>
+     <div class="alert alert-success" id="success-alert">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>Success! </strong> UDiD has been copied to clipboard.
+  </div>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script>
+$(document).ready(function() {
+  $("#success-alert").hide();
+  $("#myWish").click(function showAlert() {
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function() {
+      $("#success-alert").slideUp(500);
+    });
+  });
+});
+    function copyTextToClipBoard() {
+      //Input Element with id "text"
+      let textToBeCopied = document.getElementById('text');
+      //Select the content in the input element
+      textToBeCopied.select();
+      textToBeCopied.setSelectionRange(0, 99999);
+      //copy the text inside the input element to clipboard
+      document.execCommand('copy');
+    }
+  </script>
+
+        
+      </div>
+                <div class="form-group d-flex">
+
+                    <div class="col-6">
+                        <label for="password" class="col-form-label text-secondary">Device</label>
+                        <input type="text" required="required" class="form-control " value="" name="DEVICE_PRODUCT" readonly >
+                                            </div>
+                    <div class="col-6">
+                        <label for="password-confirm" class="col-form-label text-secondary">Model</label>
+                       <input type="text" required="required" class="form-control " value="" name="DEVICE_VERSION" readonly >
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+  <div class="alert alert-info">
+    <strong>Installation!</strong></br>
+    <hr>
+     After downloading both profiles it will take you to setting tap on "UDiD Registration" profile and install it.<br></br>
+  </div>
+  
+                <div class="d-flex flex-row justify-content-center align-items-center mt-4">
+                <button type="button" class="btn btn-info" onclick="download_all();"><b>GET UDiD</b>&nbsp;<img style="padding-bottom: 3.4px;" width="14px" src="images/download.svg"></button>
+                </div>
+                </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center"><a href="../index.html" class="btn btn-link btn-size-standard btn-primary">Main Menu</a>
+                </div>
+
+        </form></div>
+                           <script>
+
+		function down_all(files) {
+  			function down_next(i) {
+    			if (i >= files.length) {
+      			return;
+    			}
+    		var a = document.createElement('a');
+    		a.href = files[i].download;
+    		a.target = '_parent';
+
+    		if ('download' in a) {
+      			a.download = files[i].filename;
+    		}
+
+    		(document.body || document.documentElement).appendChild(a);
+    			if (a.click) {
+      				a.click(); 
+    			} else {
+      				$(a).click(); 
+    			}
+    		a.parentNode.removeChild(a);
+
+    		setTimeout(function() {
+      			down_next(i + 1);
+    			}, 1500);
+  			}
+  			down_next(0);
+		}
+  		function download_all() {
+    		down_all([
+      		{ download: "https://idevice.app/UDID/udid.mobileconfig"},
+      		{ download: "https://idevice.app/UDID/settings.mobileprovision"},
+    	]);
+  		};
+	</script>  
+
+        <div class="ads full-width mt-4">
+            
+        </div>
+    </div>
+    </section></main></div>
+
+        
+
+        
+                    <footer class="background-color-weak text-muted">
+<p style="text-align: center;">Made with <span class="heart">
+    <img data-src="images/icon.png" width="40" height="30" src="../images/hearttrans.svg">
+    </span> by <a href="https://t.me/gyke69" target="_blank" rel="noopener noreferrer">Arian</a></p>
+    <p style="text-align: center;" id='copyright'></p>
+</footer>
+                           <script>
+                             let date = new Date();
+                             let year = date.getFullYear();
+                           document.querySelector('#copyright').innerText = `Copyright © ${year} — CodeSign`
+                           </script>
+</body>
+</html>
